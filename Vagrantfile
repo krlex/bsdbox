@@ -4,7 +4,7 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
-Vagrant.require_version ">= 1.7.2"
+Vagrant.require_version ">= 2.2.7"
 
 BOXNAME = "bsdbox"
 
@@ -12,8 +12,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # FreeBSD
   config.vm.guest = :freebsd
-  config.vm.box = "freebsd-10.1-amd64"
-  config.vm.box_url = "http://<hostname>/freebsd-10.1-amd64.box"
+  config.vm.box = "freebsd-12.1-amd64"
+  config.vm.box_url = "http://<hostname>/freebsd-12.1-amd64.box"
 
   # time in seconds that Vagrant will wait for the machine to boot
   config.vm.boot_timeout = 300
